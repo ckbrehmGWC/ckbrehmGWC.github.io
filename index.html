@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head><title>BrainBlock</title>
+
+    <script src="https://code.jquery.com/jquery-2.1.4.js"></script>
+	 <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet" integrity="sha256-MfvZlkHCEqatNoGiOXveE8FIwMzZg4W85qfrfIFBfYc= sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha256-Sk3nkD6mLTMOF0EOpNtsIry+s1CsaqQC1rVLTAy+0yc= sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
+       <link href="myBrainBlockStyle.css" rel="stylesheet"></link>
+	<script src="JSbrainblock.js"></script>
+ 
+  </head>
+  
+  <body>
+	<div id = "login-container">
+		<div class="row">
+		  <div class="col-sm-2"></div>
+		  <div class="col-sm-8">
+				<div class="jumbotron">
+				  <h1>Hello! Welcome to BrainBlock.</h1>
+				  <p>Login below to start testing your memory skills!</p>
+					<div id = "login-alert">
+						<div class="form1">
+						  Username: <input type="text" id="user" placeholder="username"> <br/>
+						  Password: <input type="text" id="password" placeholder="password"> <br/>
+							<div class="btn-group" role="group" aria-label="...">
+							  <button type="button" class="btn btn-primary" onclick = login()>Login</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-2"></div>
+		</div>
+	</div>
+	
+    <!-- SHOW THE LOGGED-IN USER HERE (First, Last, Id ) -->
+    <div id="logged-user">
+    </div>
+    
+    <script>
+      <!--window.onload = loginPage;-->
+    </script>
+  </body>
+</html>
